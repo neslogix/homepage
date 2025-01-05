@@ -1,46 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<header>
+    <div class="logo-container">
+        <a href="#home">
+            <img src="images/nes_logo.png" alt="NES Logo" class="logo">
+        </a>
+    </div>
+    <nav>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
 <head>
     <meta charset="UTF-8">
-    <title>One Page Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESLOGIX Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #002244; /* Navy Blue */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        #menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #menu li {
+            margin-left: 15px;
+        }
+
+        #menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #menu li a:hover {
+            background-color: #00509E; /* Lighter Blue */
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section#home {
+            background-color: #003366; /* Dark Blue */
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section#about,
+        section#product,
+        section#pricing,
+        section#contact {
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 80vh;
+        }
+
+        section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #00509E; /* Lighter Blue */
+        }
+
+        .contact {
+            background-color: #002244; /* Navy Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #FFDD00; /* Yellow */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-
     <section id="home">
-        <header>
-            <a href="#"><img src="images/nes_logo.jpg" alt=""></a>
-            <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </header>
-         <h1>NESLOGIX SOLUTION</h1>
+        <h1>🚀 Welcome to NESLOGIX Solutions</h1>
+        <p>Your Trusted Partner for Custom Firmware Development!</p>
     </section>
-    <section id="about"><h1>COMING SOON..</h1></section>
-    <section id="product"><h1>COMING SOON..</h1></section>
-    <section id="pricing"><h1>COMING SOON..</h1></section>
-    <section id="contact"><h1>COMING SOON..</h1></section>
 
+    <section id="about">
+        <h1>About NESLOGIX Solutions</h1>
+        <p>
+            At <span class="highlight">NESLOGIX Solution</span>, we specialize in custom firmware solutions that power your products to the next level. 
+            Whether you're building a new electronic device, upgrading an existing one, or need specialized firmware support, we're here to make it happen!
+        </p>
+        <p><strong>Our Expertise Includes:</strong></p>
+        <ul style="text-align: left; max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+            <li>Embedded firmware development for a wide range of devices</li>
+            <li>Real-time operating systems (RTOS) and bare-metal solutions</li>
+            <li>Hardware/software integration</li>
+            <li>Firmware optimization & debugging</li>
+            <li>Custom solutions tailored to your product needs</li>
+        </ul>
+    </section>
+
+    <section id="product">
+        <h1>Our Products</h1>
+        <p>We bring innovative and reliable embedded systems to life. Explore our solutions for IoT, automation, and device integration.</p>
+    </section>
+
+    <section id="pricing">
+        <h1>Pricing</h1>
+        <p>Flexible pricing plans tailored to meet the needs of every project, from startups to enterprise solutions.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Let’s connect and bring your ideas to life!</p>
+        <p><strong>Email:</strong> <a href="mailto:neslogix@gmail.com">neslogix@gmail.com</a></p>
+        <p><strong>Mobile:</strong> <a href="tel:+919390351329">+91 9390351329</a></p>
+    </section>
+
+    <footer class="contact">
+        <p>📩 We’re here to discuss your next big project! Reach out anytime via email or phone.</p>
+        <p>NESLOGIX Solutions © 2025</p>
+    </footer>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
